@@ -158,14 +158,12 @@ p {
 
 .footer {
   margin-top: 20px;
-  background: var(--accent-color);
-  padding: 20px;
-  border-radius: var(--border-radius);
+  
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
   color: var(--primary-color);
-  box-shadow: var(--box-shadow);
+  
 }
 
 .page-built {
