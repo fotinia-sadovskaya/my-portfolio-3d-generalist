@@ -156,6 +156,26 @@ p {
   box-shadow: var(--box-shadow);
 }
 
+.footer {
+  margin-top: 20px;
+  background: var(--accent-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.page-built {
+display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
+  font-size: 24px;
+  text-decoration: none;
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
