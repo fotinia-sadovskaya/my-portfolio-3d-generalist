@@ -158,7 +158,6 @@ p {
 
 .footer {
   margin-top: 20px;
-  
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
@@ -201,6 +200,7 @@ display: flex;
     margin-bottom: 20px;
     border-radius: var(--border-radius);
     padding: 15px 20px;
+    font-size: 18px;
     text-decoration: none;
     text-transform: capitalize;
     text-align: center;
