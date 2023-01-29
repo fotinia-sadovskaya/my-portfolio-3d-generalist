@@ -127,7 +127,7 @@ p {
 }
 
 .email-link:hover,
-.behance-link:hover {
+.behance-link:hover, ..footer:hover {
   text-decoration: underline;
   color: var(--secondary-color);
 }
