@@ -167,7 +167,7 @@ p {
     text-align: center;
   }
 
-   .about-paragraphs {
+  .about-paragraphs {
     text-align: center;
   }
 
@@ -175,5 +175,24 @@ p {
     display: block;
     text-align: center;
     margin: 0 20px;
+  }
+
+  .primary-link {
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--primary-color);
+  }
+
+  .primary-link:hover {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
   }
 }
