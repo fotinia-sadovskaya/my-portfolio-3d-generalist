@@ -230,7 +230,7 @@ p {
   box-shadow: var(--box-shadow);
 }
 .form-control::placeholder {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 input.form-control {
   height: 46px;
