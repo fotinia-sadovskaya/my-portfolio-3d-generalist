@@ -221,9 +221,9 @@ p {
 
 .form-control {
   border-radius: var(--border-radius);
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   border-color: var(--primary-color);
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 .form-control:focus {
   border-color: var(--secondary-color);
