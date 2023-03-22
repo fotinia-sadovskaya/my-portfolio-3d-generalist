@@ -230,7 +230,6 @@ p {
   color: var(--primary-color);
 }
 .form-control:focus {
-  color: var(--secondary-color);
   border-color: var(--secondary-color);
   box-shadow: var(--box-shadow);
 }
