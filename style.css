@@ -251,3 +251,18 @@ p {
     margin: 0px 0px 20px 0px;
   }
 }
+
+.button {
+  margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    padding: 15px 20px;
+    font-size: 14px;
+    text-decoration: none;
+
+    text-align: center;
+    color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--primary-color);
+}
