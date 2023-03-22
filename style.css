@@ -199,9 +199,9 @@ p {
 }
 
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100px;
-  position: center;
   margin: 10px 5px;
   padding: 10px;
   justify-content: center;
