@@ -199,15 +199,14 @@ p {
 }
 
 .form-group {
-  display: block;
-  margin: 30px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
   width: 100px;
   margin: 10px 5px;
   padding: 10px;
-  justify-content: center;
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius);
   background: var(--primary-color);
