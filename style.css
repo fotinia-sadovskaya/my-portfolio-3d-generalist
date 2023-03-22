@@ -198,9 +198,12 @@ p {
   text-decoration: none;
 }
 
-.button {
+.form-group {
   display: block;
   margin: 30px auto;
+}
+
+.button {
   width: 100px;
   margin: 10px 5px;
   padding: 10px;
