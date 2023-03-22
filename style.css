@@ -292,6 +292,6 @@ input.form-control {
   }
 
   .form-control {
-    width: 80%;
+    margin: 20px;
   }
 }
