@@ -219,19 +219,19 @@ p {
   color: white;
 }
 
-#contact .form-control {
+.form-control {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   color: var(--accent-color);
 }
-#contact .form-control:focus {
+.form-control:focus {
   border-color: var(--secondary-color);
   box-shadow: none;
 }
-#contact .form-control::placeholder {
+.form-control::placeholder {
   color: var(--accent-color);
 }
-#contact input.form-control {
+input.form-control {
   height: 46px;
 }
 
