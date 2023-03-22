@@ -219,6 +219,22 @@ p {
   color: white;
 }
 
+#contact .form-control {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--accent-color);
+}
+#contact .form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: none;
+}
+#contact .form-control::placeholder {
+  color: var(--accent-color);
+}
+#contact input.form-control {
+  height: 46px;
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
@@ -238,10 +254,6 @@ p {
 
   h3 {
     margin: 20px 15px;
-  }
-
-  .col-lg-8 {
-    width: 70%;
   }
 
   .about-paragraphs {
