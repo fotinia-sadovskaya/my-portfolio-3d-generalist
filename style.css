@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: sans-serif;
-  margin: 100px auto;
-  max-width: 85%;
+  font-family: "Roboto", sans-serif;
+  margin: 150px auto 0px auto;
+  max-width: 100%;
   background: linear-gradient(
     to right,
     #e4afcb 0%,
@@ -30,11 +30,13 @@ h3 {
 }
 
 h1 {
-  font-size: 78px;
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 42px;
 }
 
 h3 {
@@ -50,6 +52,18 @@ p {
   line-height: 1.5;
   text-align: center;
   color: var(--primary-color);
+}
+
+.social-network-link {
+  margin: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.social-network-link:hover {
+  color: var(--primary-color);
+  background: var(--accent-color);
+  padding: 4px 7px;
+  border-radius: 50%;
 }
 
 .learn-more,
@@ -68,6 +82,7 @@ p {
 .navigation-links {
   display: flex;
   margin-top: 40px;
+  margin-bottom: 200px;
   justify-content: center;
 }
 
@@ -90,13 +105,13 @@ p {
   color: white;
 }
 
-.about-link {
+.started-link {
   color: var(--primary-color);
   box-shadow: var(--box-shadow);
   border: 1px solid var(--primary-color);
 }
 
-.about-link:hover {
+.started-link:hover {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
@@ -127,16 +142,29 @@ p {
 }
 
 .email-link:hover,
-.behance-link:hover, .page-built:hover {
+.behance-link:hover,
+.page-built:hover {
   text-decoration: underline;
   color: var(--secondary-color);
 }
+
+.project:hover {
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: var(--border-radius);
+}
+
 .steampunkShip {
   display: block;
   margin: 30px auto;
-  max-width: 100%;
+  max-width: 85%;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+}
+
+.profile {
+  max-width: 100%;
+  margin-bottom: 8px;
 }
 
 .navbar-dark {
@@ -145,7 +173,7 @@ p {
 
 .navbar-logo {
   margin: 0px;
-  max-width: 100px;
+  max-width: 150px;
 }
 
 .rounded {
@@ -162,26 +190,31 @@ p {
   line-height: 1.5;
   text-align: center;
   color: var(--primary-color);
-  
 }
 
 .page-built {
-display: flex;
-  justify-content: center;
   color: var(--secondary-color);
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
 }
 
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
-    line-height: 1.5;
+    line-height: 1.1;
   }
 
   h2 {
     font-size: 32px;
     text-align: center;
+  }
+
+  h1, h2, h3 {
+    margin: 5px 15px;
+  }
+
+  h3 {
+    margin: 20px 15px;
   }
 
   .about-paragraphs {
@@ -202,7 +235,7 @@ display: flex;
     padding: 15px 20px;
     font-size: 14px;
     text-decoration: none;
-   
+
     text-align: center;
     color: var(--primary-color);
     box-shadow: var(--box-shadow);
@@ -212,5 +245,9 @@ display: flex;
   .primary-link:hover {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
+  }
+
+  .social-network-link {
+    margin: 0px 0px 20px 0px;
   }
 }
