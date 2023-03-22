@@ -292,6 +292,8 @@ input.form-control {
   }
 
   .form-control {
-    margin: 20px;
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
 }
