@@ -203,6 +203,7 @@ p {
   padding: 10px;
   justify-content: center;
   border: 1px solid var(--primary-color);
+  border-radius: 2px;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
