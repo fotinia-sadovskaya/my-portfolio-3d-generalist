@@ -227,7 +227,7 @@ p {
   border-radius: var(--border-radius);
   background-color: var(--accent-color);
   border-color: var(--primary-color);
-  color: var(--primary-color), 0.8;
+  color: var(--primary-color), 0.3;
 }
 .form-control:focus {
   border-color: var(--secondary-color);
