@@ -220,13 +220,14 @@ p {
 }
 
 .form-control {
+  border-radius: var(--border-radius);
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   color: var(--accent-color);
 }
 .form-control:focus {
   border-color: var(--secondary-color);
-  box-shadow: none;
+  box-shadow: var(--box-shadow);
 }
 .form-control::placeholder {
   color: var(--accent-color);
