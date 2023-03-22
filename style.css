@@ -205,7 +205,7 @@ p {
 .form-group {
   display: flex;
   justify-content: center;
-  padding-right: 0 !important;
+  margin: 0 !important;
 }
 
 .button {
