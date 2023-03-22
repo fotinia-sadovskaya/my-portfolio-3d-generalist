@@ -141,6 +141,10 @@ p {
   text-decoration: none;
 }
 
+.behance-link {
+  margin-bottom: 30px;
+}
+
 .email-link:hover,
 .behance-link:hover,
 .page-built:hover {
