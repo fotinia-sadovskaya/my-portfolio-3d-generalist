@@ -199,17 +199,18 @@ p {
 }
 
 .button {
+  width: 40px;
   margin: 10px 5px;
   padding: 10px;
   justify-content: center;
   border: 1px solid var(--primary-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
-.button-link:hover {
+.button:hover {
   background-color: var(--secondary-color);
   color: white;
 }
