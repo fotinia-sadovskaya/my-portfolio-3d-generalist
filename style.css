@@ -199,7 +199,9 @@ p {
 }
 
 .button {
-  width: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
   margin: 10px 5px;
   padding: 10px;
   justify-content: center;
