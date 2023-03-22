@@ -290,4 +290,8 @@ input.form-control {
   .social-network-link {
     margin: 0px 0px 20px 0px;
   }
+
+  .form-control {
+    width: 80%;
+  }
 }
