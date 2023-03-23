@@ -61,10 +61,6 @@ section {
 
 }
 
-#contact {
-  margin-bottom: 40px;
-}
-
 .social-network-link {
   margin: 10px;
   color: rgb(255, 255, 255);
@@ -172,6 +168,7 @@ section {
 .steampunkShip {
   display: block;
   margin: 30px auto;
+  margin-bottom: 50px;
   max-width: 85%;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
