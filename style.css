@@ -220,19 +220,21 @@ section {
 }
 
 .button {
-  width: 100px;
-  margin: 10px 5px;
-  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius);
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: var(--accent-color);
+  transition: all 200ms ease-in-out;
 }
 
 .button:hover {
   background-color: var(--secondary-color);
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .form-control {
