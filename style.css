@@ -56,7 +56,6 @@ p {
 
 section {
   display: flex;
-  position: absolute;
   max-width: 80%;
 }
 
