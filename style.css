@@ -54,6 +54,10 @@ p {
   color: var(--primary-color);
 }
 
+section {
+  max-width: 80%;
+}
+
 .social-network-link {
   margin: 10px;
   color: rgb(255, 255, 255);
