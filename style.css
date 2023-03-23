@@ -57,6 +57,7 @@ p {
 section {
   display: flex;
   max-width: 80%;
+  position: relative;
 }
 
 .social-network-link {
