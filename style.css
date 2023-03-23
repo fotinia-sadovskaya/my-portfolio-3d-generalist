@@ -161,7 +161,7 @@ section {
 
 .project:hover {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--primary-color);
   border-radius: var(--border-radius);
 }
 
