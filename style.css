@@ -216,12 +216,12 @@ p {
   border-radius: var(--border-radius);
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--accent-color);
 }
 
 .button:hover {
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--accent-color);
 }
 
 .form-control {
