@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 150px auto 0px auto;
+  max-height: 100%;
   max-width: 100%;
   background: linear-gradient(
     to right,
@@ -97,12 +97,12 @@ p {
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--accent-color);
 }
 
 .contact-link:hover {
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--accent-color);
 }
 
 .started-link {
