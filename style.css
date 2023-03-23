@@ -55,7 +55,6 @@ p {
 }
 
 section {
-  display: flex;
   max-width: 80%;
   position: center;
 }
