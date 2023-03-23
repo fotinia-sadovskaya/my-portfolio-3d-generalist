@@ -56,7 +56,7 @@ p {
 
 section {
   display: flex;
-   margin: 20px auto;
+  position: absolute;
   max-width: 80%;
 }
 
