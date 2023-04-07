@@ -214,10 +214,7 @@ section {
   text-decoration: none;
 }
 
-.form-group {
-  display: flex;
-  justify-content: center;
-}
+
 
 .button {
   display: block;
