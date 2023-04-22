@@ -270,8 +270,9 @@ input.form-control {
   left: 0; right: 0; /* Вся ширина блока */
   bottom: -1em; /* Положение снизу */
   background: rgba(238, 217, 181,0.8); /* Цвет фона */
-  font-size: 11px; /* Размер текста */
+  font-size: 24px; /* Размер текста */
   padding: 5px; /* Поля вокруг текста */
+  margin: 40px;
   text-align: center; /* Выравниваем текст по центру */
   transition: 0.5s; /* Время анимации */
   opacity: 0; /* Полная прозрачность */
