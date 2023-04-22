@@ -258,11 +258,12 @@ input.form-control {
   display: inline-block; /* Строчно-блочный элемент */
   position: relative; /* Относительное позиционирование */
   overflow: hidden; /* Прячем лишнее */
-   box-shadow: var(--box-shadow);
+ 
 }
 }
 .photo img {
   display: block; /* Убираем отступ снизу */
+  box-shadow: var(--box-shadow);
 }
 
 .photo::after {
