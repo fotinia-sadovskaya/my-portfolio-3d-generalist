@@ -254,7 +254,17 @@ input.form-control {
   height: 46px;
 }
 
+.photo {
+  display: inline-block; /* Строчно-блочный элемент */
+  position: relative; /* Относительное позиционирование */
+  overflow: hidden; /* Прячем лишнее */
+  padding: 5px;
+ 
+}
 
+.photo img {
+  display: block; /* Убираем отступ снизу */
+}
 
 .photo::after {
   content: attr(data-title); /* Выводим текст */
