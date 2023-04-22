@@ -260,7 +260,7 @@ input.form-control {
   overflow: hidden; /* Прячем лишнее */
  
 }
-}
+
 .photo img {
   display: block; /* Убираем отступ снизу */
 }
