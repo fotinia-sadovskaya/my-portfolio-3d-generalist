@@ -255,10 +255,7 @@ input.form-control {
 }
 
 .photo {
- 
   position: relative; /* Относительное позиционирование */
-  
- 
 }
 
 .photo::after {
@@ -271,7 +268,7 @@ input.form-control {
   font-size: 18px; /* Размер текста */
   font-family: "Playfair Display", serif;
   padding: 5px; /* Поля вокруг текста */
-  margin: 40px 20px 0px 20px ;
+  margin: 40px 15px 0px 15px ;
   color: var(--accent-color);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
