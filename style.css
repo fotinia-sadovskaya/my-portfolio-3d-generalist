@@ -272,7 +272,7 @@ input.form-control {
   background: rgba(238, 217, 181,0.8); /* Цвет фона */
   font-size: 24px; /* Размер текста */
   padding: 5px; /* Поля вокруг текста */
-  margin: 40px;
+  margin: 40px 20px;
   text-align: center; /* Выравниваем текст по центру */
   transition: 0.5s; /* Время анимации */
   opacity: 0; /* Полная прозрачность */
