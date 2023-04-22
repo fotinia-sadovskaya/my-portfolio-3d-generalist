@@ -261,10 +261,6 @@ input.form-control {
  
 }
 
-.photo img {
-  display: block; /* Убираем отступ снизу */
-}
-
 .photo::after {
   content: attr(data-title); /* Выводим текст */
   position: absolute; /* Абсолютное позиционирование */
