@@ -255,6 +255,23 @@ input.form-control {
   height: 46px;
 }
 
+.photo::after {
+  content: attr(data-title); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0; right: 0; /* Вся ширина блока */
+  bottom: -1em; /* Положение снизу */
+  background: rgba(238, 217, 181,0.8); /* Цвет фона */
+  font-size: 11px; /* Размер текста */
+  padding: 5px; /* Поля вокруг текста */
+  text-align: center; /* Выравниваем текст по центру */
+  transition: 0.5s; /* Время анимации */
+  opacity: 0; /* Полная прозрачность */
+}
+.photo:hover::after {
+  opacity: 1; /* Полная видимость */
+  bottom: 0; /* Положение снизу */
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
