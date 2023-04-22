@@ -255,7 +255,7 @@ input.form-control {
 }
 
 .photo {
-  display: inline-block; /* Строчно-блочный элемент */
+  
   position: relative; /* Относительное позиционирование */
   overflow: hidden; /* Прячем лишнее */
 }
