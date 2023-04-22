@@ -259,9 +259,7 @@ input.form-control {
   position: relative; /* Относительное позиционирование */
   overflow: hidden; /* Прячем лишнее */
 }
-.photo img {
-  display: block; /* Убираем отступ снизу */
-}
+
 
 .photo::after {
   content: attr(data-title); /* Выводим текст */
@@ -273,7 +271,7 @@ input.form-control {
   font-size: 18px; /* Размер текста */
   font-family: "Playfair Display", serif;
   padding: 5px; /* Поля вокруг текста */
-  margin: 40px 20px 5px 20px ;
+  margin: 40px 20px 0px 20px ;
   color: var(--accent-color);
   border-radius: var(--border-radius);
   text-align: center; /* Выравниваем текст по центру */
