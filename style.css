@@ -257,7 +257,7 @@ input.form-control {
 .photo {
  
   position: relative; /* Относительное позиционирование */
-  overflow: hidden; /* Прячем лишнее */
+  
  
 }
 
