@@ -258,7 +258,7 @@ input.form-control {
   display: inline-block; /* Строчно-блочный элемент */
   position: relative; /* Относительное позиционирование */
   overflow: hidden; /* Прячем лишнее */
-  padding: 5px;
+  margin: 10px;
  
 }
 
