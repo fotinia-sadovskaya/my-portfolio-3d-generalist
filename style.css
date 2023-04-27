@@ -232,9 +232,7 @@ video {
   box-shadow: var(--box-shadow);
 }
 
-.email-link,
 .behance-link,
-.account-link,
 .vimeo-link {
   display: flex;
   justify-content: center;
@@ -245,13 +243,36 @@ video {
   text-decoration: none;
 }
 
-.email-link:hover,
 .behance-link:hover,
-.account-link:hover,
 .vimeo-link:hover,
 .page-built:hover {
   text-decoration: underline;
   color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+.email-link, .account-link {
+  color: var(--secondary-color);
+  font-size: 24px;
+  line-height: 2;
+  text-decoration: none;
+  position: relative;
+}
+.email-link::after, .account-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+.email-link:hover::after, .account-link:hover::after {
+  width: 100%;
 }
 
 .steampunkShip {
