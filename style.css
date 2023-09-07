@@ -339,6 +339,10 @@ a:hover {
   max-width: 150px;
 }
 
+.sketchfab-embed-wrapper {
+  margin-bottom: 20px;
+}
+
 .project, .sketchfab-embed-wrapper {
   box-shadow: var(--box-shadow) !important;
 }
