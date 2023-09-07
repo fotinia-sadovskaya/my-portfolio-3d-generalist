@@ -339,7 +339,7 @@ a:hover {
   max-width: 150px;
 }
 
-.project {
+.project, .sketchfab-embed-wrapper {
   box-shadow: var(--box-shadow) !important;
 }
 
