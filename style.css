@@ -187,8 +187,8 @@ video {
 .social-network-link:hover {
   color: var(--secondary-color);
   background: var(--accent-color);
- 
-
+  
+  border-radius: 50%;
 }
 
 .learn-more,
