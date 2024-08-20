@@ -188,7 +188,7 @@ video {
   color: var(--secondary-color);
   background: var(--accent-color);
   padding: 4px 7px;
-  border-radius: 50%;
+
 }
 
 .learn-more,
