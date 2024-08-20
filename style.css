@@ -547,6 +547,7 @@ input.form-control {
 
   .social-network-link {
     font-size: 16px;
+    margin: 0 20px;
   }
 
   .email-link,
