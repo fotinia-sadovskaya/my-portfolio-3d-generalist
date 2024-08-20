@@ -178,7 +178,7 @@ video {
 
 .social-network-link {
   color: var(--accent-color);
-  margin: 0 26px;
+  margin: 0 28px;
   padding-left: 0px;
   font-size: 18px;
   transition: all 250ms ease-in-out;
