@@ -187,7 +187,7 @@ video {
 .social-network-link:hover {
   color: var(--secondary-color);
   background: var(--accent-color);
-  padding: 4px 7px;
+ 
 
 }
 
