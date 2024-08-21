@@ -182,6 +182,7 @@ video {
   padding-left: 0px;
   font-size: 18px;
   transition: all 250ms ease-in-out;
+  text-decoration: none;
 }
 
 .social-network-link:hover {
