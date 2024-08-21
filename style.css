@@ -178,7 +178,7 @@ video {
 
 .social-network-link {
   color: var(--accent-color);
-  margin: 0 28px;
+  margin: 0 10px;
   padding-left: 0px;
   font-size: 18px;
   transition: all 250ms ease-in-out;
@@ -187,7 +187,7 @@ video {
 .social-network-link:hover {
   color: var(--secondary-color);
   background: var(--accent-color);
-  padding: 8px 0px 12px 0px;
+  padding: 4px 8px;
   border-radius: 50%;
 }
 
