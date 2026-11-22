@@ -1,61 +1,55 @@
 const form = document.querySelector("#form");
-const launchBtn = document.querySelector("#launch-btn");
 
-const userEmailField = document.querySelector("#user-email");
+// This script is only needed on the contact page.
+// On other pages there is no #form, so we do nothing and avoid console errors.
+if (form) {
+  const launchBtn = document.querySelector("#launch-btn");
 
-function clearFormFields() {
-  const fieldName = form.querySelector('input[type="text"]');
-  const fieldEmail = form.querySelector('input[type="email"]');
-  // const fieldSubject = form.querySelector('input[type="text"]');
-  const fieldMessage = form.querySelector('textarea[type="text"]');
-
-  fieldName.value = "";
-  fieldEmail.value = "";
-  // fieldSubject.value = "";
-  fieldMessage.value = "";
-}
-
-function addShipElement() {
-  const targetContainer = document.querySelector("#form");
+  // Decorative ship animation element inside the form
   const shipEl = document.createElement("img");
   shipEl.classList.add("ship-anim");
+  shipEl.alt = "";
+  form.appendChild(shipEl);
 
-  targetContainer.appendChild(shipEl);
-}
+  const showShipAnim = () => {
+    shipEl.setAttribute("src", "./img/ship-anim.gif");
 
-function showShipAnim() {
-  const shipEl = document.querySelector(".ship-anim");
+    setTimeout(() => {
+      shipEl.removeAttribute("src");
+    }, 8000);
+  };
 
-  shipEl.setAttribute("src", "./img/ship-anim.gif");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
 
-  setTimeout(() => {
-    shipEl.removeAttribute("src");
-  }, 8000);
-}
+    launchBtn.setAttribute("disabled", true);
+    launchBtn.style.opacity = "0.8";
 
-addShipElement();
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const formData = new FormData(form);
-
-  launchBtn.setAttribute("disabled", true);
-  launchBtn.style.opacity = "0.8";
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      showShipAnim();
-
-      launchBtn.removeAttribute("disabled");
-      clearFormFields();
-
-      setTimeout(() => {
-        launchBtn.style.opacity = "1";
-      }, 8000);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
     })
-    .catch((error) => console.log("Sending form failed"));
-});
+      .then((response) => {
+        // fetch does not fail on 404/500, so check the status ourselves
+        if (!response.ok) {
+          throw new Error("Request failed with status " + response.status);
+        }
+
+        showShipAnim();
+        form.reset(); // clears all fields at once
+        launchBtn.removeAttribute("disabled");
+
+        setTimeout(() => {
+          launchBtn.style.opacity = "1";
+        }, 8000);
+      })
+      .catch((error) => {
+        console.log("Sending form failed", error);
+        // let the user try again
+        launchBtn.removeAttribute("disabled");
+        launchBtn.style.opacity = "1";
+      });
+  });
+}
