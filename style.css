@@ -9,7 +9,7 @@
 }
 
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,26 +20,24 @@ body {
   font-family: var(--default-font-family);
   max-height: 100%;
   max-width: 100%;
-  background: linear-gradient(
-    to right,
-    #e4afcb 0%,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #e2c58b 30%,
-    #c2ce9c 64%,
-    #7edbdc 100%
-  );
+  background: linear-gradient(to right,
+      #e4afcb 0%,
+      #b8cbb8 0%,
+      #b8cbb8 0%,
+      #e2c58b 30%,
+      #c2ce9c 64%,
+      #7edbdc 100%);
 }
 
-#heart{
-position:absolute;
-top: 50px;
-left: 0;
--moz-transition: transform 1s; 
--webkit-transition: transform 1s;  
--ms-transition: transform 1s;  
--o-transition: transform 1s;  
-transition: transform 1s;  
+#heart {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  -moz-transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
 }
 
 h1,
@@ -111,6 +109,26 @@ video {
 .navbar {
   background-color: var(--primary-color) !important;
   box-shadow: var(--box-shadow) !important;
+}
+
+.cookie-settings-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-left: 1rem;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cookie-settings-btn:hover {
+  color: #fff;
+}
+
+.cookie-settings-btn:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
 
 .hero {
@@ -298,6 +316,7 @@ a:hover {
   text-decoration: none;
   position: relative;
 }
+
 .email-link::after,
 .account-link::after,
 .behance-link::after,
@@ -311,6 +330,7 @@ a:hover {
   top: 110%;
   transition: all 0.4s;
 }
+
 .email-link:hover::after,
 .account-link:hover::after,
 .behance-link:hover::after,
@@ -344,7 +364,8 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.project, .sketchfab-embed-wrapper {
+.project,
+.sketchfab-embed-wrapper {
   box-shadow: var(--box-shadow) !important;
 }
 
@@ -418,50 +439,68 @@ h3 {
   border-color: var(--primary-color);
   color: var(--secondary-color);
 }
+
 .form-control:focus {
   color: var(--primary-color);
   border-color: var(--secondary-color);
   box-shadow: var(--box-shadow);
 }
+
 .form-control::placeholder {
   color: var(--primary-color);
 }
+
 input.form-control {
   height: 46px;
 }
 
 .photo {
-  position: relative; /* Относительное позиционирование */
+  position: relative;
+  /* Относительное позиционирование */
 }
 
 .photo::after {
-  content: attr(data-title); /* Выводим текст */
-  position: absolute; /* Абсолютное позиционирование */
+  content: attr(data-title);
+  /* Выводим текст */
+  position: absolute;
+  /* Абсолютное позиционирование */
   left: 20px;
-  right: 20px; /* Вся ширина блока */
-  bottom: -1em; /* Положение снизу */
-  background: rgba(2, 95, 90, 0.7); /* Цвет фона */
-  font-size: 16px; /* Размер текста */
-  padding: 12px; /* Поля вокруг текста */
+  right: 20px;
+  /* Вся ширина блока */
+  bottom: -1em;
+  /* Положение снизу */
+  background: rgba(2, 95, 90, 0.7);
+  /* Цвет фона */
+  font-size: 16px;
+  /* Размер текста */
+  padding: 12px;
+  /* Поля вокруг текста */
   /* margin: 40px 20px 30px 20px; */
   height: 40%;
   color: var(--accent-color);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  text-align: center; /* Выравниваем текст по центру */
-  transition: 0.5s; /* Время анимации */
-  opacity: 0; /* Полная прозрачность */
+  text-align: center;
+  /* Выравниваем текст по центру */
+  transition: 0.5s;
+  /* Время анимации */
+  opacity: 0;
+  /* Полная прозрачность */
 }
 
 .photo:hover::after {
-  opacity: 1; /* Полная видимость */
-  bottom: 0; /* Положение снизу */
+  opacity: 1;
+  /* Полная видимость */
+  bottom: 0;
+  /* Положение снизу */
 }
 
 @media (max-width: 992px) {
   .photo::after {
-    font-size: 14px; /* Размер текста */
-    padding: 12px; /* Поля вокруг текста */
+    font-size: 14px;
+    /* Размер текста */
+    padding: 12px;
+    /* Поля вокруг текста */
     /* margin-bottom: 20px; */
     height: 70%;
   }
@@ -469,8 +508,10 @@ input.form-control {
 
 @media (max-width: 768px) {
   .photo::after {
-    font-size: 12px; /* Размер текста */
-    padding: 4px; /* Поля вокруг текста */
+    font-size: 12px;
+    /* Размер текста */
+    padding: 4px;
+    /* Поля вокруг текста */
     /* margin-bottom: 14px;
     margin-left: 5px;
     margin-right: 5px; */
@@ -556,7 +597,8 @@ input.form-control {
   }
 
   .photo::after {
-    font-size: 18px; /* Размер текста */
+    font-size: 18px;
+    /* Размер текста */
     height: 40%;
     padding: 10px;
   }
