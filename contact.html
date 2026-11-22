@@ -142,19 +142,28 @@
             <h2 class="text-brand">Send me a message</h2>
           </div>
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out">
-            <form action="#" class="row g-lg-3 gy-3" id="form" netlify>
+            <form name="contact" method="POST" class="row g-lg-3 gy-3" id="form" data-netlify="true"
+              netlify-honeypot="bot-field">
+              <!-- Required by Netlify for submissions sent with fetch: must match the form's name -->
+              <input type="hidden" name="form-name" value="contact" />
+
+              <!-- Honeypot: hidden from people, bots fill it in and are rejected -->
+              <p class="d-none">
+                <label>Do not fill this out if you are human: <input name="bot-field" /></label>
+              </p>
+
               <div class="form-group col-md-6">
                 <input type="text" class="form-control" placeholder="Enter your name" aria-label="Your name"
-                  rel="noopener noreferrer" id="user-name" name="User name" />
+                  id="user-name" name="name" autocomplete="name" required />
               </div>
               <div class="form-group col-md-6">
                 <input type="email" class="form-control" placeholder="Enter your email" aria-label="Your email"
-                  rel="noopener noreferrer" id="user-email" name="User email" />
+                  id="user-email" name="email" autocomplete="email" required />
               </div>
               <div class="form-group col-md-12">
                 <label for="user-message" class="visually-hidden">Your message</label>
-                <textarea name="User message" rows="4" class="form-control" placeholder="Enter your message"
-                  rel="noopener noreferrer" id="user-message"></textarea>
+                <textarea name="message" rows="4" class="form-control" placeholder="Enter your message"
+                  id="user-message" required></textarea>
               </div>
               <div class="form-group col-md-12 d-grid">
                 <button type="submit" class="button" id="launch-btn">
